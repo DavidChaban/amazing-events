@@ -1,14 +1,24 @@
 const queryString = location.search
 const params = new URLSearchParams(queryString)
-const id = params.get('id')
-array = data.events
-console.log(location)
-console.log(location.search)
-console.log(id)
-const events = data.events.find(item => item._id == id)
-console.log(events)
-const div = document.getElementById('detailXd')
 
+const api = "https://amazing-events.herokuapp.com/api/events"
+fetch("https://amazing-events.herokuapp.com/api/events")
+.then(Response => Response.json())
+.then(data => variable(data))
+let variable = (data) => {
+  array = data.events
+ 
+  const id = params.get('id')
+
+  const events = data.events.find(item => item._id == id)
+  
+  let select 
+
+  if (data.currentDate < events.date ){
+        select = "estimate"
+  }else { select="assistance"}
+
+const div = document.getElementById('detailXd')
 div.innerHTML = `<div class="mt-4 mb-1 pt-4 d-flex  " >
    <img src="${events.image}" class="class=" img-fluid cardimage imagenDetails 
       "  style="height:10px widht:80px; " alt="${events.name}">
@@ -35,15 +45,13 @@ div.innerHTML = `<div class="mt-4 mb-1 pt-4 d-flex  " >
                <p class="card-text m-3">Capacity:${events.capacity}   </p>
                </div>
                <div class="d-flex justify-content-around">
-                  <p class="pt-2">Estimate: ${events.estimate} </p>
-                 </div>
-                 <div class="d-flex justify-content-around">
-                  <p class="pt-2">Assistance: ${events.assistance} </p>
+                  <p class="pt-2">${select}: ${events.assistance || events.estimate} </p>
                  </div>
                <div class="d-flex justify-content-around">
-                  <p class="pt-2">Price: $${events.price} </p>
+                  <p class="pt-2">Price: $ ${events.price}</p>
                  </div>
            </div> 
    </div> 
 `
-
+  }
+ 
