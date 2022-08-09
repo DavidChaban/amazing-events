@@ -27,13 +27,13 @@
       <div class="collapse navbar-collapse  justify-content-end" id="navbarNav">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link " id="actual" aria-current="page" href="#">Home</a>
+            <a class="nav-link " aria-current="page" href="./index.html">Home</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="./upcoming.html">Upcoming Events</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="./pastevents.html">Past Events</a>
+            <a class="nav-link" id="actual" href="#">Past Events</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="./contact.html">Contact</a>
@@ -44,20 +44,21 @@
         </ul>
       </div>
     </div>
+    </div>
   </nav>
   <main>
     <!-- =================================carrusel===================================  -->
     <div class="container-fluid d-flex justify-content-center bg-warning align-items-center">
-      <a class="ms-0  ms-md-3 m-3 d-flex align-items-center" href="#"><img class="Flechitas"
+      <a class="ms-0  ms-md-3 m-3 d-flex align-items-center" href="./upcoming.html"><img class="Flechitas"
           src="./img/arrow-left-circle.svg" alt="flecha Izquierda"></a>
-      <h1 class="home mt-2">Home</h1>
-      <a class="ms-0  ms-md-3 flechas" href="upcoming.html"> <img class="Flechitas" src="./img/arrow-right-circle.svg"
+      <h1 class="home mt-2">Past Events</h1>
+      <a class="ms-0  ms-md-3 flechas" href="./contact.html"> <img class="Flechitas" src="./img/arrow-right-circle.svg"
           alt=""> </a>
     </div>
     <!-- =================================CheckBox + Search==================================  -->
     <div class="checkboxSearch d-block d-xl-flex justify-content-around">
       <div id="checkId" class="d-flex flex-wrap "></div>
-      <form class="d-flex" role="search" id="searchh">
+      <form class="d-flex mt-3 " role="search" id="searchh">
         <input class="form-control me-2 w-50" style="width:100px ;" type="search" placeholder="Search"
           aria-label="Search">
         <button class="btn btn-outline-success" type="submit">Search</button>
@@ -69,7 +70,6 @@
     </div>
   </main>
   <footer class="d-flex align-items-center bg-dark mt-4 justify-content-between">
-    <!-- <div class="d-flex justify-content-around "> -->
     <div class="social-bar gap-3">
       <a class="iconSocial" target="_blank" href="https://www.instagram.com/"><img class="iconSocial"
           src="./img/instagram.svg" alt=""></a>
@@ -81,10 +81,8 @@
     <div class="text-danger d-flex  align-items-center me-5">
       <h5 class="h51">©Cohort-32</h5>
     </div>
-    <!-- </div> -->
   </footer>
-  
-  <script src="./js/index.js"></script>
+   <script src="./js/past.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
     crossorigin="anonymous"></script>
