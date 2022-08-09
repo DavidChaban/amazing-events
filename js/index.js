@@ -1,10 +1,18 @@
 let text = ''
-array = data.events
 let container1 = document.getElementById('container')
-let card = ''
+// let card = ''
+
+const api = "https://amazing-events.herokuapp.com/api/events"
+fetch("https://amazing-events.herokuapp.com/api/events")
+.then(Response => Response.json())
+.then(data => variable(data))
+let variable = (data) => {
+  array = data.events
+
 function displayCards (array) {
   if (array.length > 0) {
     let card = ''
+    
     array.forEach(
       array =>
         (card += `<div class="card01 card">
@@ -56,7 +64,7 @@ function search () {
   search.addEventListener('keyup', e => {
     textVacie = e.target.value
     filter()
-  })
+})
 }
 search()
 ///-------Eventos click - checkbox-----------
@@ -106,3 +114,4 @@ function filter () {
   displayCards(filterArray)
 }
 filter()
+}
