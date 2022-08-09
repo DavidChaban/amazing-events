@@ -110,7 +110,9 @@ h1 {
   text-shadow: 8px 8px 30px rgb(165, 62, 36), -2px 2px 20px rgb(165, 36, 36);
 }
 .bg-warning {
-  background-image: linear-gradient(to top, #f54dcb 0%, #5a012c 100%);
+  /* background-image: linear-gradient(to top, #e92156 0%, #5a012c 100%); */
+  /* background-image: linear-gradient(to top, #ca0b3e 0%, #5a012c 100%); */
+  background-image: linear-gradient(to top, #de3d68 0%, #5a012c 100%);
 }
 /* ======================================CARDS =====================================================  */
 .card01 {
@@ -256,7 +258,9 @@ p {
   color: gold;
 }
 .bg-dark {
-  background-image: linear-gradient(to top, #f54dcb 0%, #5a012c 100%);
+  /* background-image: linear-gradient(to top, #f54dcb 0%, #5a012c 100%); */
+  /* background-image: linear-gradient(to top, #e92156 0%, #5a012c 100%); */
+  background-image: linear-gradient(to top, #e92156 0%, #5a012c 100%);
   }
 .h51 {
   color: #f7f014;
@@ -312,7 +316,7 @@ p {
   color: black;
   
   border: 1.5px solid darkblue;
-  background-image: linear-gradient(to top, #f54dcb 0%, #5a012c 100%);
+  background-image: linear-gradient(to top, #dc2348 0%, #5a012c 100%);
   box-shadow: 0 0 10px #20e2d7, 0 0 20px #20e2d7;
   color: black;
   padding: 5px;
