@@ -1,10 +1,24 @@
-let fechaActual = data.currentDate
-let text = ''
-array = data.events
-let container1 = document.getElementById('container')
-let card = ''
-function displayCards (array) {
-  if (array.length > 0) {
+
+
+const api = "https://amazing-events.herokuapp.com/api/events"
+fetch("https://amazing-events.herokuapp.com/api/events")
+.then(Response => Response.json())
+.then(data => variable(data))
+let variable = (data) => {
+  array = data.events
+  
+  
+  
+  let fechaActual = data.currentDate
+  let text = ''
+  array = data.events
+  let container1 = document.getElementById('container')
+  let card = ''
+  
+  
+  
+  function displayCards (array) {
+    if (array.length > 0) {
     let card = ''
     array.forEach(array => {
       if (fechaActual > array.date)
@@ -108,3 +122,4 @@ function filter () {
   displayCards(filterArray)
 }
 filter()
+  }
