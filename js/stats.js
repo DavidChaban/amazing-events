@@ -1,4 +1,5 @@
 const API = fetch("https://amazing-events.herokuapp.com/api/events")
+
 const datosApi = async() => {
     try{
         res = await API
@@ -8,7 +9,7 @@ const datosApi = async() => {
         a(events)
         b(events)
         z(events)
-
+        console.log(a,b,z)
     }catch(err){
         console.log(err)
     }
@@ -18,12 +19,13 @@ datosApi()
 function a(array){
   let statics1 = document.getElementById("EventsTable")
   pastData =array.filter(e => parseInt(e.date) < 2022)
+  console.log(pastData)
   let major = pastData.filter(e => ((e.assistance * 100) / e.capacity) > 96)
   let minor = pastData.filter(e => ((e.assistance * 100) / e.capacity) < 70)
   let high = array.map(e => e.capacity)
   let max = Math.max(...high);
   let highest = array.filter(e => e.capacity == max)
-
+    console.log(highest)
 
   let row = document.createElement ('tr')
       row.innerHTML = `
@@ -43,7 +45,8 @@ function a(array){
       row3.innerHTML = `
       <td>${major[2].name}</td>
       <td>${minor[2].name}</td>
-      <td></td>`
+      <td>${minor[1].name}</td>
+      `
   statics1.appendChild(row3)
 
   let row4 = document.createElement ('tr')

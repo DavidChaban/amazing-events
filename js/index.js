@@ -2,7 +2,7 @@ let text = ''
 let container1 = document.getElementById('container')
 // let card = ''
 
-const api = "https://amazing-events.herokuapp.com/api/events"
+// const api = "https://amazing-events.herokuapp.com/api/events"
 fetch("https://amazing-events.herokuapp.com/api/events")
 .then(Response => Response.json())
 .then(data => variable(data))
