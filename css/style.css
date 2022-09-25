@@ -5,7 +5,7 @@
 }
 body {
   font-family: "Roboto", sans-serif;
-  background-color: azure;
+  background-color: rgba(15, 42, 42, 0.472);
 }
 /* ==================   logo + botones nav / ancor . arriba de h1       ====================================                */
 .navbar {
@@ -27,7 +27,7 @@ body {
 }
 main {
   min-height: 79.3vh;
-  background-color: azure;
+  background-color: rgba(15, 42, 42, 0.472);
 }
 .barra1 {
   width: 100%;
@@ -47,7 +47,7 @@ footer {
   justify-content: space-between;
 }
 .main002 {
-  background-color: azure;
+  background-color: rgba(15, 42, 42, 0.472);
 }
 h1 {
   font-family: "Times New Roman", Times, serif !important;
