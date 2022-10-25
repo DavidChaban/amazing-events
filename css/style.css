@@ -5,7 +5,6 @@
 }
 body {
   font-family: "Roboto", sans-serif;
-  background-color: rgba(15, 42, 42, 0.472);
 }
 /* ==================   logo + botones nav / ancor . arriba de h1       ====================================                */
 .navbar {
@@ -26,8 +25,9 @@ body {
   gap: 9rem;
 }
 main {
-  min-height: 79.3vh;
-  background-color: rgba(15, 42, 42, 0.472);
+  /* background-color: rgba(15, 42, 42, 0.472); */
+  min-height: 75.1vh;
+  
 }
 .barra1 {
   width: 100%;
@@ -35,7 +35,7 @@ main {
 footer {
   min-height: 10vh;
   flex-direction: row !important;
-  background-color: #20e2d7 !important;
+  /* background-color: #20e2d7 !important; */
 }
 .iconSocial {
   width: 2.5rem;
@@ -46,17 +46,24 @@ footer {
   align-items: center;
   justify-content: space-between;
 }
-.main002 {
+/* .main002 {
   background-color: rgba(15, 42, 42, 0.472);
-}
+} */
 h1 {
   font-family: "Times New Roman", Times, serif !important;
+}
+.card-title{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+
 }
 .home {
   font-size: 4rem;
   font-family: "sans-serif", Tahoma, Geneva, Verdana, sans-serif;
   border-radius: 20px;
-  text-shadow: 8px 8px 30px rgb(165, 36, 36), -2px 2px 20px rgb(165, 36, 36);
+  /* text-shadow: 8px 8px 30px rgb(165, 36, 36), -2px 2px 20px rgb(165, 36, 36); */
   padding: 7px;
 }
 .Anchor {
@@ -67,7 +74,7 @@ h1 {
   font-size: 13px !important;
   display: block;
   text-transform: uppercase;
-  color: grey;
+  /* color: grey; */
   font-size: 18px;
   overflow: hidden;
   transition: all 500ms ease;
@@ -82,7 +89,7 @@ h1 {
 .nav-link {
   color: black !important;
   border-radius: 10px;
-  color: #434343;
+  /* color: #434343; */
   padding: 10px;
   border-radius: 10px;
   font-size: 1.1rem;
@@ -97,7 +104,7 @@ h1 {
   color: rgb(25, 25, 228) !important;
   border-radius: 10px;
   background-image: black;
-  color: #434343;
+  /* color: #434343; */
 }
 .Flechitas {
   height: 3rem;
@@ -120,6 +127,8 @@ h1 {
   justify-content: center;
   width: 15rem !important;
   background-color: rgb(83, 81, 81);
+  /* background-color: white; */
+  color: black!important;
   border-radius: 16px 16px 16px 16px !important;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1) !important;
   backdrop-filter: blur(20px) !important;
@@ -238,12 +247,17 @@ p {
   padding-right: 0px !important;
   padding-left: 0px !important;
   object-fit: cover !important;
-  
 }
+
+
 .card-title {
   display: flex;
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
   color: gold;
+  margin-bottom: 0px !important;
+  padding-bottom: 0px !important;
 }
 .card-text {
   color: gold;
@@ -261,6 +275,7 @@ p {
   /* background-image: linear-gradient(to top, #f54dcb 0%, #5a012c 100%); */
   /* background-image: linear-gradient(to top, #e92156 0%, #5a012c 100%); */
   background-image: linear-gradient(to top, #e92156 0%, #5a012c 100%);
+
   }
 .h51 {
   color: #f7f014;
@@ -310,7 +325,7 @@ p {
   margin-bottom: 40px;
   z-index: 0;
   font-weight: 700;
-  width: 100px;
+  /* width: 100px; */
   border-radius: 10px;
   padding: 10px;
   color: black;
@@ -361,10 +376,62 @@ p {
     justify-content: center;
     margin-inline: auto;
   }
+
+
   #actual {
    padding: 4px !important;
   }
+  .h51{
+    
+    margin-left: 7rem;
+    font-size: 14px;
+    width: 74px;  
+    margin-top: 10px;
+    
+  }
+  .iconSocial {
+    width: 1.2rem;
+    margin-left: 10px;
 }
+ /* footer{
+  margin: 0px;
+ } */
+}
+
+@media (min-width:375px){
+
+  .h51{
+    
+    margin-left: 10.2rem;
+    font-size: 14px;
+    width: 74px;  
+    margin-top: 10px;
+    
+  }
+  .iconSocial {
+    width: 1.2rem;
+    margin-left: 10px;
+}
+}
+
+@media (min-width:425px){
+
+  .h51{
+    
+    margin-left: 13.2rem;
+    font-size: 14px;
+    width: 74px;  
+    margin-top: 10px;
+    
+  }
+  .iconSocial {
+    width: 1.2rem;
+    margin-left: 10px;
+
+}
+
+}
+
 @media (min-width:768px) {
   a.nav-link {
     display: flex;
@@ -373,4 +440,52 @@ p {
     padding: 4px !important;
     box-sizing: border-box;
   }
+  .h51{
+    
+    margin-left: 34.5rem;
+    font-size: 14px;
+    width: 74px;  
+    margin-top: 10px;
+    
+  }
+  .iconSocial {
+    width: 1.2rem;
+    margin-left: 10px;
+
 }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

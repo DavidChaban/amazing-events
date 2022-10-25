@@ -21,7 +21,7 @@ function displayCards (array) {
         <div class="d-flex justify-content-start bg-black d-flex align-items-center justify-content-center align-content-center dateCard">
         <p class="card-text">${array.date}</p>
         </div>
-        <h5 class="card-title">${array.name}</h5>
+        <h5 class="card-title ">${array.name}</h5>
         <p class="card-text m-3  "> ${array.description}</p>
         <div class="d-flex justify-content-around">
         <p class="pt-1 m-1 ">Price: $${array.price} </p>
